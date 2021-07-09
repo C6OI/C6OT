@@ -105,4 +105,4 @@ client.on("message", async msg => {
       break;
   }
 });
-client.login('ODU5NzEyNjQ1MjUxMDcyMDAw.YNwryw.L2aWsQ1aP4DGmUuE3KhHNR8CrWc');
+client.login('your token here');
