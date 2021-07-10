@@ -3,9 +3,6 @@ const client = new Discord.Client();
 const child_process = require("child_process");
 const { sensitiveHeaders } = require('http2');
 
-// я думаю сделать полноценный rich presence будет сложновато да?
-// я сделал cmd по умолчанию
-
 const owner = "789524259809525780" // bot owner id here
 const logChannel = "863113977844596746"; // console log channel id here
 
