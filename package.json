@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "discord.js": "^12.5.3",
+    "fs-extra": "^10.0.0"
+  },
+  "name": "c6ot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C6OI",
+  "license": "ISC",
+  "description": "Мой бот хз для чего (возможно потому что пшш учит меня кодить)"
+}
