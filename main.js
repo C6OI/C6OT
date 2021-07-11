@@ -4,6 +4,10 @@ const client = new Discord.Client();
 const fs = require('fs-extra');
 const child_process = require("child_process");
 const { sensitiveHeaders } = require('http2');
+const { env } = require('process');
+let config = require('./helper/config.json');
+let token = config.token;
+let prefix = config.prefix;
 
 client.commands = new Discord.Collection();
 //ниже мы пиздим файлы из папки
@@ -111,4 +115,5 @@ client.on("message", async msg => {
       break;
   }
 });
-client.login('ODU5NzEyNjQ1MjUxMDcyMDAw.YNwryw.DviJk-6QBvOZtg8wRNgjvNoQCP4');
+
+client.login(token);
