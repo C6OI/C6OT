@@ -1,3 +1,4 @@
+"use strict";
 const { getRandomFromArray } = require('../helper/utils.js')
 const responses = [ // ответы на "ку"
   "ку",

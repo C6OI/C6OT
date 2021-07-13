@@ -1,7 +1,8 @@
+"use strict";
 const { getRandomFromArray } = require('../helper/utils.js');
 
 module.exports.run = async (client, msg, args) => {
-    return msg.reply(`команды:\nку\nпока\nдосчитай до (ваше число)\nфокус\nлайк\nржать\nадовый фокус (внимание без шуток оно вас забанит за это я виноват не буду я вас предупредил)`);
+    return msg.reply("команды:\n" + client.commands.map(x => x.help.name).join("\n")); // оно не будет нормально выводить команду "адовый фокус" и "досчитай до" потому что они сделаны на костылях
 }
 
 module.exports.help = {

@@ -1,8 +1,10 @@
+"use strict";
 const { getRandomFromArray } = require('../helper/utils.js');
 
 module.exports.run = async (client, msg, args) => {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return client.user.setPresence({ activity: { name: "бам" } });
+    msg.reply("чекай мой статус");
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    client.user.setPresence({ activity: { name: "бам" } });
 }
 
 module.exports.help = {
