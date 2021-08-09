@@ -8,8 +8,8 @@ const responses = [ // ответы на "пока"
 const { Guild } = require('discord.js');
 
 module.exports.run = async (client, msg, args) => {
-    return msg.reply(getRandomFromArray(responses));
-}
+      msg.reply(getRandomFromArray(responses))
+  }
 
 module.exports.help = {
     name: `пока`
